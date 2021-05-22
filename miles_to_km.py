@@ -3,12 +3,12 @@ if __name__ == '__main__':
     print('1 - Si desea transformar millas a kilometros')
     print('2 - Si desea transformar kilometros a millas')
     opcion = int(input(''))
-    if (opcion != 1 and opcion != 2):
+    if opcion != 1 and opcion != 2:
         raise Exception('Esa opcion no es valida')
 
     millas_por_km = 1.609344
 
-    tasa = millas_por_km if opcion == 1 else 1/millas_por_km
+    tasa = millas_por_km if opcion == 1 else 1 / millas_por_km
 
     nombre_unidad = 'las millas' if opcion == 1 else 'los kilometros'
     unidad = float(input(f'\nInserte {nombre_unidad} a convertir: '))

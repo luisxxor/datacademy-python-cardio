@@ -44,15 +44,14 @@ if __name__ == '__main__':
             else:
                 break
 
-        print()
         resultado = ppt(opcion_j1, opcion_j2)
 
-        if (resultado == 0):
-            print(f'Ambos jugadores empataron en la ronda {ronda}\n')
+        if resultado == 0:
+            print(f'\nAmbos jugadores empataron en la ronda {ronda}\n')
         else:
-            print(f'El jugador {resultado} ha ganado la ronda {ronda}\n')
+            print(f'\nEl jugador {resultado} ha ganado la ronda {ronda}\n')
 
-            if (resultado == 1):
+            if resultado == 1:
                 j1_puntuacion += 1
             else:
                 j2_puntuacion += 1
